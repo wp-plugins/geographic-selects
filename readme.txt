@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: country, country select, countries, countries select
 Requires at least: 2.0.2
 Tested up to: 3.1.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 
 Simple plugin to insert Country and State select statement's into your website.
@@ -39,6 +39,9 @@ or
 2. How it will be displayed on your page
 
 == Changelog ==
+
+= 1.1.2 (5/12/2011) =
+* Bugfix: Fixed CSS which was interfering with primary Wordpress CSS elements.
 
 = 1.1.1 (5/12/2011) =
 * Added: Screenshots
