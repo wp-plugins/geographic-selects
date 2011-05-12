@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: country, country select, countries, countries select
 Requires at least: 2.0.2
 Tested up to: 3.1.2
-Stable tag: 1.11
+Stable tag: 1.1.1
 License: GPLv2 or later
 
 Simple plugin to insert Country and State select statement's into your website.
@@ -40,7 +40,7 @@ or
 
 == Changelog ==
 
-= 1.11 (5/12/2011) =
+= 1.1.1 (5/12/2011) =
 * Added: Screenshots
 * Bugfix: Removed extra spaces added onto the end of the main .php causing header problems.
 
