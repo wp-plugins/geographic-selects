@@ -4,7 +4,7 @@ Plugin Name: Geographic Selects
 Plugin URI: http://www.free-seo.biz/wordpress-plugins/geographic-selects/
 Description: Simple plugin to insert Country &lt;select&gt;'s into your website.
 Author: Free-SEO.biz
-Version: 1.1.2
+Version: 1.1.3
 Author URI: http://www.free-seo.biz
 
 Usage:
@@ -38,6 +38,7 @@ echo geographicSelect_insertCountries($atts);
 
  $plugin_url = path_join(WP_PLUGIN_URL, basename( dirname( __FILE__ ) ));
 
+ wp_enqueue_script('jquery');
  wp_enqueue_script( 'geographicSelect_Javascript', $plugin_url.'/script.js');
  wp_enqueue_style( 'geographicSelect_Stylesheet', $plugin_url.'/style.css', FALSE, '', '');
 
