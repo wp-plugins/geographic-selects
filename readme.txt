@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: country, country select, countries, countries select
 Requires at least: 2.0.2
 Tested up to: 3.1.2
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 
 Simple plugin to insert Country and State select statement's into your website.
@@ -40,8 +40,8 @@ or
 
 == Changelog ==
 
-= 1.1.5 (6/19/2011) =
-* Bugfix: Only load JQUERY in backroom
+= 1.1.7 (6/19/2011) =
+* Bugfix: JS Scripts load in admin area only
 
 = 1.1.4 (5/12/2011) =
 * Bugfix: Removed errand jscript

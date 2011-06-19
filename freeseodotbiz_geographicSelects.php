@@ -38,8 +38,6 @@ echo geographicSelect_insertCountries($atts);
 
  $plugin_url = path_join(WP_PLUGIN_URL, basename( dirname( __FILE__ ) ));
 
- wp_enqueue_script( 'geographicSelect_Javascript', $plugin_url.'/script.js');
- wp_enqueue_style( 'geographicSelect_Stylesheet', $plugin_url.'/style.css', FALSE, '', '');
 
  add_action('admin_menu', array('freeseodotbiz_geographicSelect','addOptionsPage'));
  add_shortcode('geographicSelect-insertCountries', 'geographicSelect_insertCountries');
@@ -87,6 +85,8 @@ echo geographicSelect_insertCountries($atts);
   
   function addOptionsPage(){
    wp_enqueue_script('jquery');
+   wp_enqueue_script( 'geographicSelect_Javascript', $plugin_url.'/script.js');
+   wp_enqueue_style( 'geographicSelect_Stylesheet', $plugin_url.'/style.css', FALSE, '', '');
    add_options_page('Geographic Selects', 'Geo-Selects Config', 8, __FILE__, array('freeseodotbiz_geographicSelect','optionsPageActual'));
   }
   function optionsPageActual(){
