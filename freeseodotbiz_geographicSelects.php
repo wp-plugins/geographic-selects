@@ -36,7 +36,6 @@ echo geographicSelect_insertCountries($atts);
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
- $plugin_url = path_join(WP_PLUGIN_URL, basename( dirname( __FILE__ ) ));
 
 
  add_action('admin_menu', array('freeseodotbiz_geographicSelect','addOptionsPage'));
@@ -84,6 +83,7 @@ echo geographicSelect_insertCountries($atts);
   } 
   
   function addOptionsPage(){
+   $plugin_url = path_join(WP_PLUGIN_URL, basename( dirname( __FILE__ ) ));
    wp_enqueue_script('jquery');
    wp_enqueue_script( 'geographicSelect_Javascript', $plugin_url.'/script.js');
    wp_enqueue_style( 'geographicSelect_Stylesheet', $plugin_url.'/style.css', FALSE, '', '');
